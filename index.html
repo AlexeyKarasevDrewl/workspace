@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Template</title>
-  </head>
-  <body>
-    <h1>
-      This is a static template, there is no bundler or bundling involved!
-    </h1>
 
-    <style>
-      .panel-expand {
-        background-color: black;
-        color: white;
-        padding: 20px;
-        width: 400px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Static Template</title>
+</head>
 
-      /* mechanism */
-      .panel-expand {
-        display: grid;
-        grid-template-rows: 0fr;
-        transition: grid-template-rows 0.3s ease-in-out;
-      }
+<body>
+  <h1>
+    This is a static template, there is no bundler or bundling involved!
+  </h1>
 
-      .panel-expand:hover {
-        grid-template-rows: 1fr;
-      }
+  <style>
+    .panel-expand {
+      background-color: darkblue;
+      color: white;
+      padding: 20px;
+      width: 400px;
+    }
 
-      .panel-expand__content {
-        min-height: 64px;
-        overflow: hidden;
-      }
-    </style>
+    /* mechanism */
+    .panel-expand {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.3s ease-in-out;
+    }
 
-    <div class="panel-expand">
-      <div class="panel-expand__content">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-          corrupti, sint distinctio deserunt vel unde consequatur sequi nobis
-          necessitatibus quis ad officiis doloremque ab, blanditiis facere
-          possimus obcaecati voluptate sed!
-        </p>
-        <p>
-          Voluptas, ipsa porro? Ex nostrum culpa magnam magni officiis
-          laboriosam fugit molestias amet reiciendis sunt facere, debitis odit
-          neque totam natus ad aliquam minus, sed repellat eveniet, et impedit
-          ipsa.
-        </p>
-      </div>
+    .panel-expand:hover {
+      grid-template-rows: 1fr;
+    }
+
+    .panel-expand__content {
+      min-height: 64px;
+      overflow: hidden;
+    }
+  </style>
+
+  <div class="panel-expand">
+    <div class="panel-expand__content">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+        corrupti, sint distinctio deserunt vel unde consequatur sequi nobis
+        necessitatibus quis ad officiis doloremque ab, blanditiis facere
+        possimus obcaecati voluptate sed!
+      </p>
+      <p>
+        Voluptas, ipsa porro? Ex nostrum culpa magnam magni officiis
+        laboriosam fugit molestias amet reiciendis sunt facere, debitis odit
+        neque totam natus ad aliquam minus, sed repellat eveniet, et impedit
+        ipsa.
+      </p>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
